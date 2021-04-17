@@ -1,0 +1,384 @@
+@media (max-width: 4000px) {
+  .wrapper {
+    margin-left: 200px;
+    margin-right: 0;
+    position: relative;
+  }
+  body {
+    margin: 0;
+    background-image: url("img/iswanto.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 88px;
+    margin-left: 0;
+    margin-bottom: 132px;
+    margin-right: 115px;
+  }
+
+  .hamburger-menu,
+  .menu__box {
+    display: none;
+  }
+
+  .logo,
+  .menu {
+    display: inline-block;
+  }
+
+  .menu {
+    display: flex;
+    align-items:center;
+    margin-right: 0;
+  }
+
+  .logo{
+    width: 146px;
+    height: 55px;
+    margin-right: 956px;
+    background-image: url("img/logo.svg");
+    background-repeat: no-repeat;
+  }
+
+  .menu__item {
+    position: relative;
+    margin-right: 37px;
+    font: 22px/26px "museo_sans_cyrl500", sans-serif;
+    color: #F8EEE4;
+    text-decoration: none;
+    transition: opacity 0.5s;
+  }
+
+  .menu__item::after {
+    position: absolute;
+    display: block;
+    content: "";
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: #0056ec;
+    opacity: 0;
+    transition: opacity 0.5s, width 0.5s;
+  }
+
+  .menu__item:hover::after {
+    position: absolute;
+    display: block;
+    content: "";
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #0056ec;
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+
+  .menu__item:hover {
+    opacity: 0.5;
+  }
+
+  .menu__item:hover::after,
+  .menu__item_active::after {
+    opacity: 1;
+    width: 100%;
+  }
+
+  .menu__item:last-child {
+    margin-right: 0;
+  }
+
+  .main {
+    background: top right no-repeat url(img/frame.svg);
+    position: relative;
+    height: 558px;
+  }
+
+  .main__title{
+    margin: 0;
+    font: 280px/371px "pt_serifbold", serif;
+    color: #F8EEE4;
+    opacity: 0.4;
+  }
+
+  .main__subtitle{
+    position: absolute;
+    top: 231px;
+    left: 83px;
+    z-index: 1;
+    font: 98px/130px "pt_serifbold", serif;
+    color: #F8EEE4;
+    margin: 0;
+  }
+
+  .main__text{
+    font: 22px/26px "museo_sans_cyrl500", sans-serif;
+    color: #F8EEE4;
+    width: 551px;
+    margin-top: 9px;
+    margin-left: 20px;
+    margin-bottom: 54px;
+  }
+
+  .main__button{
+    color: #fff;
+    font: 22px/26px "museo_sans_cyrl500", sans-serif;
+    position: relative;
+    padding: 17px 86px 17px 87px;
+    margin-left: 22px;
+    background: #D4BEA3;
+    text-decoration: none;
+    border-radius: 48px;
+    transition: opacity 0.5s;
+  }
+
+  .gallery{
+    position: absolute;
+    top: 301px;
+    left: 843px;
+    width: 923px;
+    height: 422px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .gallery__pic{
+    width: 284px;
+    height: 380px;
+    border-radius: 5px;
+    z-index: 2;
+    padding: 0;
+    margin: 0;
+    transition: transform .2s;
+  }
+
+  .gallery__pic_pic2:hover,
+  .gallery__pic_pic3:hover{
+    transform: scale(1.1);
+  }
+
+  .gallery__pic_pic1{
+    display: inline;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 422px;
+    width: 317px;
+    background: top right no-repeat url(img/pic1.svg);
+  }
+
+  .gallery__pic_pic2{
+    display: inline;
+    position: absolute;
+    top: 21px;
+    left: 351px;
+    height: 380px;
+    width: 284px;
+    background: top right no-repeat url(img/pic2.svg);
+  }
+
+  .gallery__pic_pic3{
+    display: inline;
+    position: absolute;
+    top: 21px;
+    left: 669px;
+    height: 380px;
+    width: 208px;
+    background: top right no-repeat url(img/pic3.svg);
+  }
+}
+@media (max-width: 1919px) {
+  .wrapper {
+    margin-left: 142px;
+    margin-right: 0;
+    position: relative;
+  }
+  body {
+    margin: 0;
+    background-image: url("img/iswanto.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 63px;
+    margin-left: 0;
+    margin-bottom: 92px;
+    margin-right: 81px;
+  }
+
+  .hamburger-menu,
+  .menu__box {
+    display: none;
+  }
+
+  .logo,
+  .menu {
+    display: inline-block;
+  }
+
+  .menu {
+    display: flex;
+    align-items:center;
+    margin-right: 0;
+  }
+
+  .logo{
+    width: 104px;
+    height: 39px;
+    margin-right: 680px;
+    background-image: url("img/logo.svg");
+    background-repeat: no-repeat;
+  }
+
+  .menu__item {
+    position: relative;
+    margin-right: 24px;
+    font: 16px/19px "museo_sans_cyrl500", sans-serif;
+    color: #F8EEE4;
+    text-decoration: none;
+    transition: opacity 0.5s;
+  }
+
+  .menu__item::after {
+    position: absolute;
+    display: block;
+    content: "";
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: #0056ec;
+    opacity: 0;
+    transition: opacity 0.5s, width 0.5s;
+  }
+
+  .menu__item:hover::after {
+    position: absolute;
+    display: block;
+    content: "";
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #0056ec;
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+
+  .menu__item:hover {
+    opacity: 0.5;
+  }
+
+  .menu__item:hover::after,
+  .menu__item_active::after {
+    opacity: 1;
+    width: 100%;
+  }
+
+  .menu__item:last-child {
+    margin-right: 0;
+  }
+
+  .main {
+    background: top right no-repeat url(img/frame.svg);
+    position: relative;
+    height: 397px;
+  }
+
+  .main__title{
+    margin: 0;
+    font: 200px/265px "pt_serifbold", serif;
+    color: #F8EEE4;
+    opacity: 0.4;
+  }
+
+  .main__subtitle{
+    position: absolute;
+    top: 231px;
+    left: 83px;
+    z-index: 1;
+    font: 70px/93px "pt_serifbold", serif;
+    color: #F8EEE4;
+    margin: 0;
+  }
+
+  .main__text{
+    font: 16px/19px "museo_sans_cyrl500", sans-serif;
+    color: #F8EEE4;
+    width: 551px;
+    margin-top: 9px;
+    margin-left: 20px;
+    margin-bottom: 54px;
+  }
+
+  .main__button{
+    color: #fff;
+    font: 16px/19px "museo_sans_cyrl500", sans-serif;
+    position: relative;
+    padding: 17px 86px 17px 87px;
+    margin-left: 22px;
+    background: #D4BEA3;
+    text-decoration: none;
+    border-radius: 48px;
+    transition: opacity 0.5s;
+  }
+
+  .gallery{
+    position: absolute;
+    top: 301px;
+    left: 843px;
+    width: 923px;
+    height: 422px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .gallery__pic{
+    width: 284px;
+    height: 380px;
+    border-radius: 5px;
+    z-index: 2;
+    padding: 0;
+    margin: 0;
+    transition: transform .2s;
+  }
+
+  .gallery__pic_pic2:hover,
+  .gallery__pic_pic3:hover{
+    transform: scale(1.1);
+  }
+
+  .gallery__pic_pic1{
+    display: inline;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 422px;
+    width: 317px;
+    background: top right no-repeat url(img/pic1.svg);
+  }
+
+  .gallery__pic_pic2{
+    display: inline;
+    position: absolute;
+    top: 21px;
+    left: 351px;
+    height: 380px;
+    width: 284px;
+    background: top right no-repeat url(img/pic2.svg);
+  }
+
+  .gallery__pic_pic3{
+    display: inline;
+    position: absolute;
+    top: 21px;
+    left: 669px;
+    height: 380px;
+    width: 208px;
+    background: top right no-repeat url(img/pic3.svg);
+  }
+}
